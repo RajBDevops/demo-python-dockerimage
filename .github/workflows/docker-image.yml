@@ -17,6 +17,6 @@ jobs:
        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
      - uses: actions/checkout@v4
      - name: Build Docker image
-       run: docker build -t demo-py/rajbdocker/pyimage:latest .
+       run: docker build -t rajbdocker/demo-py:pyimage .
      - name: Push Docker image
-       run: docker push demo-py/rajbdocker/pyimage:latest
+       run: docker push rajbdocker/demo-py:pyimage
