@@ -19,4 +19,4 @@ jobs:
      - name: Build Docker image
        run: docker build -t rajbdocker/pyimage:latest .
      - name: Push Docker image
-       run: docker push rajbdocker/demo-py:pyimage
+       run: docker push rajbdocker/pyimage:latest
